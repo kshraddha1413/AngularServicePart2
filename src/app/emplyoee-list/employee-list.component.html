@@ -1,0 +1,36 @@
+<p>Menu</p>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Type</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let emp of employees">
+
+        <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.type}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.price}}</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+<form ngForm>
+    <div>
+        <label>Type</label>
+        <input type="text">
+        <br>
+
+        <label>Quantity</label>
+        <input type="text">
+        <br>
+        <button type="submit">Order</button>
+    </div>
+</form>
